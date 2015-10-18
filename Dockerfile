@@ -12,7 +12,7 @@ MAINTAINER Rob Smith <kormoc@gmail.com>
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install apache2 libapache2-mod-php5 php5-mysql php-apc php5-gd php5-curl \
-    libdbd-pg-perl libdbd-mysql-perl
+    libdbd-pg-perl libdbd-mysql-perl libhttp-date-perl
 
 RUN a2enmod rewrite
 RUN a2enmod deflate
